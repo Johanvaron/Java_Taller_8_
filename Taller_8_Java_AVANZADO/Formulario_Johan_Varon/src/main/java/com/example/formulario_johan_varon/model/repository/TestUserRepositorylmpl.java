@@ -26,7 +26,7 @@ public abstract class TestUserRepositorylmpl implements Repository<User> {
         userInsert.setUser_firstname("johan");
         userInsert.setUser_lastname("perez");
         userInsert.setUser_email("Johan@correo.com");
-        userInsert.setUser_pssword("p6V36%5QS0UluI");
+        userInsert.setUser_password("p6V36%5QS0UluI");
         repository.saveObj(userInsert);
 
         System.out.println("========== listAllObj ==========");
@@ -43,7 +43,7 @@ public abstract class TestUserRepositorylmpl implements Repository<User> {
         userUpdate.setUser_firstname("johan");
         userUpdate.setUser_lastname("Varon");
         userUpdate.setUser_email("JoanVaron@example.com");
-        userUpdate.setUser_pssword("^JlB13L0U6MJ8s");
+        userUpdate.setUser_password("^JlB13L0U6MJ8s");
         repository.saveObj(userInsert);
         repository.listAllObj().forEach(System.out::println);
 
